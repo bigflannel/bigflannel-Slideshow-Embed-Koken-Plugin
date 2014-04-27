@@ -8,7 +8,7 @@ A plugin for use with Koken [http://koken.me].
 
 == Description ==
 
-Adds a shortcode to embed slideshows with next, previous and play/pause controls in essays.  When in text in your Koken admin area, and when editing an essay or page, click on the slideshow icon with a '+' on it to insert a slideshow with controls. Style the added controls using their CSS selectors:
+Adds a shortcode to embed slideshows with next, previous and play/pause controls in essays or pages.  When in text in your Koken admin area, and when editing an essay or page, click on the slideshow icon with a '+' on it to insert a slideshow with controls. Style the added controls using their CSS selectors:
 
 #sldshw-prev
 #sldshw-play
@@ -33,6 +33,10 @@ There are no settings.
 
 == Changelog ==
 
+= 1.01 =
+
+Updated read me.txt to reflect final GitHub URL.
+
 = 1.0 =
 
 Initial Release
@@ -40,3 +44,4 @@ Initial Release
 == Author ==
 
 * [Mike Hartley, bigflannel](http://bigflannel.com)
+* [Plugin Home Page](https://github.com/bigflannel/bigflannel-Slideshow-Embed-Koken-Plugin)
