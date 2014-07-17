@@ -33,9 +33,13 @@ There are no settings.
 
 == Changelog ==
 
+= 1.02 =
+
+Reduced the length of the plugin title so the button in Koken is shorter and does not get pushed out of the embed window that opens.
+
 = 1.01 =
 
-Updated read me.txt to reflect final GitHub URL.
+Updated readme.txt to reflect final GitHub URL.
 
 = 1.0 =
 
