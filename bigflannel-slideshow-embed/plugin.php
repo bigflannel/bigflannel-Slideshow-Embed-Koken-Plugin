@@ -15,13 +15,13 @@
 	</div>
 	<ul class="nav-content">
 		<li>
-			<a href="#" id="sldshw-prev{$slideUnique}" class="sldshw-prev" title="{{ language.previous }}" data-bind-to-key="left">&larr;&nbsp;</a>
+			<a href="#" id="sldshw-prev{$slideUnique}" class="sldshw-prev" title="{{ language.previous }}">&larr;&nbsp;</a>
 		</li>
 		<li>
-			<a href="#" id="sldshw-play{$slideUnique}" class="sldshw-play" title="Toggle" data-bind-to-key="space">Loading</a>
+			<a href="#" id="sldshw-play{$slideUnique}" class="sldshw-play" title="Toggle">Loading</a>
 		</li>
 		<li>
-			<a href="#" id="sldshw-next{$slideUnique}" class="sldshw-next" title="{{ language.next }}" data-bind-to-key="right">&nbsp;&rarr;</a>
+			<a href="#" id="sldshw-next{$slideUnique}" class="sldshw-next" title="{{ language.next }}">&nbsp;&rarr;</a>
 		</li>
 	</ul>
 	<div class="text-content">
