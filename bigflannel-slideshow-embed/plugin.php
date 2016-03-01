@@ -11,7 +11,7 @@
 	    	return <<<HTML
 <div class="k-content-embed bigflannel-slideshow-embed">
 	<div class="main-content">
-		<koken:pulse source="album" filter:id="{$attributes['album']}" jsvar="pulse{$slideUnique}" group="albums" next="#sldshw-next{$slideUnique}" previous="#sldshw-prev{$slideUnique}" toggle="#sldshw-play{$slideUnique}" link_to="advance" autostart="false" />
+		<koken:pulse source="album" filter:id="{$attributes['album']}" jsvar="pulse{$slideUnique}" group="albums-{$slideUnique}" next="#sldshw-next{$slideUnique}" previous="#sldshw-prev{$slideUnique}" toggle="#sldshw-play{$slideUnique}" link_to="advance" autostart="false" />
 	</div>
 	<ul class="nav-content">
 		<li>
