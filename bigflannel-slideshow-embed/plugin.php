@@ -52,9 +52,9 @@
 			if (data.title.length > 1 ) {
 				title.html( data.title );
 			} else {
-				title.html( '&nbsp;' );
+				title.html( data.filename );
 			}
-			link.attr("title", data.title );			
+			link.attr("title", data.title || data.filename );			
 			if (data.caption.length > 1) {
 				caption.html( data.caption );
 			} else {
