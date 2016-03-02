@@ -11,23 +11,23 @@
 	    	return <<<HTML
 <div class="k-content-embed bigflannel-slideshow-embed">
 	<div class="main-content">
-		<koken:pulse source="album" filter:id="{$attributes['album']}" jsvar="pulse{$slideUnique}" group="albums-{$slideUnique}" next="#sldshw-next{$slideUnique}" previous="#sldshw-prev{$slideUnique}" toggle="#sldshw-play{$slideUnique}" link_to="advance" autostart="false" />
+		<koken:pulse source="album" filter:id="{$attributes['album']}" jsvar="pulse{$slideUnique}" group="albums-{$slideUnique}" next="#sldshw-next{$slideUnique}" previous="#sldshw-prev{$slideUnique}" toggle="#sldshw-play{$slideUnique}" link_to="lightbox" autostart="false" />
 	</div>
 	<ul class="nav-content">
-		<li>
-			<a href="#" id="sldshw-prev{$slideUnique}" class="sldshw-prev" title="{{ language.previous }}">&larr;&nbsp;</a>
+		<li class="sldshw-prev">
+			<a href="#" id="sldshw-prev{$slideUnique}" title="{{ language.previous }}" data-bind-to-key="left">&larr;&nbsp;</a>
 		</li>
-		<li>
-			<a href="#" id="sldshw-play{$slideUnique}" class="sldshw-play" title="Toggle">Loading</a>
+		<li class="sldshw-play">
+			<a href="#" id="sldshw-play{$slideUnique}" title="Toggle" data-bind-to-key="space">Loading</a>
 		</li>
-		<li>
-			<a href="#" id="sldshw-next{$slideUnique}" class="sldshw-next" title="{{ language.next }}">&nbsp;&rarr;</a>
+		<li class="sldshw-next">
+			<a href="#" id="sldshw-next{$slideUnique}" title="{{ language.next }}" data-bind-to-key="right">&nbsp;&rarr;</a>
 		</li>
 	</ul>
 	<div class="text-content">
-		<a href="#" id="content-link{$slideUnique}" title="">
-			<h1 id="content-title{$slideUnique}" class="content-title">&nbsp;</h1>
-		</a>
+		<h1 id="content-title{$slideUnique}" class="content-title">
+			<a href="#" id="content-link{$slideUnique}" title="">&nbsp;</a>
+		</h1>
 		<div id="content-caption{$slideUnique}" class="content-caption" class="header-light">
 			&nbsp;
 		</div>
@@ -54,7 +54,7 @@
 			} else {
 				title.html( data.filename );
 			}
-			link.attr("title", data.title || data.filename );			
+			link.attr("title", data.title || data.filename );
 			if (data.caption.length > 1) {
 				caption.html( data.caption );
 			} else {
