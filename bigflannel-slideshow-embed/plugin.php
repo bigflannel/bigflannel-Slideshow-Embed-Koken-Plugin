@@ -11,17 +11,17 @@
 	    	return <<<HTML
 <div class="k-content-embed bigflannel-slideshow-embed">
 	<div class="main-content">
-		<koken:pulse source="album" filter:id="{$attributes['album']}" jsvar="pulse{$slideUnique}" group="albums" next="#sldshw-next{$slideUnique}" previous="#sldshw-prev{$slideUnique}" toggle="#sldshw-play{$slideUnique}" link_to="advance" autostart="false" />
+		<koken:pulse source="album" filter:id="{$attributes['album']}" jsvar="pulse{$slideUnique}" group="albums-{$slideUnique}" next="#sldshw-next{$slideUnique}" previous="#sldshw-prev{$slideUnique}" toggle="#sldshw-play{$slideUnique}" link_to="advance" autostart="false" />
 	</div>
 	<ul class="nav-content">
 		<li>
-			<a href="#" id="sldshw-prev{$slideUnique}" class="sldshw-prev" title="Previous" data-bind-to-key="left">&larr;&nbsp;Prev</a>
+			<a href="#" id="sldshw-prev{$slideUnique}" class="sldshw-prev" title="{{ language.previous }}" data-bind-to-key="left">&larr;&nbsp;{{ language.previous }}</a>
 		</li>
 		<li>
 			<a href="#" id="sldshw-play{$slideUnique}" class="sldshw-play" title="Toggle" data-bind-to-key="space">Loading</a>
 		</li>
 		<li>
-			<a href="#" id="sldshw-next{$slideUnique}" class="sldshw-next" title="Next" data-bind-to-key="right">Next&nbsp;&rarr;</a>
+			<a href="#" id="sldshw-next{$slideUnique}" class="sldshw-next" title="{{ language.next }}" data-bind-to-key="right">{{ language.next }}&nbsp;&rarr;</a>
 		</li>
 	</ul>
 	<div class="text-content">
@@ -68,9 +68,9 @@
 		function playState{$slideUnique}(playing) {
 			var el = $('#sldshw-play{$slideUnique}');
 			if (playing) {
-				el.html('Pause');
+				el.html('{{ language.pause }}');
 			} else {
-				el.html('Play');
+				el.html('{{ language.play }}');
 			}
 		}
 	</script>

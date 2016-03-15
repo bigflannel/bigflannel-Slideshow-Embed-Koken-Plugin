@@ -42,6 +42,12 @@ There are no settings.
 
 == Changelog ==
 
+= 1.05 =
+
+via BlackSkorpio https://github.com/BlackSkorpio
+Changed hardcoded language strings to {{ language.string }} where possible
+Made the group attribute for koken:pulse unique so can apply different settings per slideshow
+
 = 1.04 =
 
 After Koken update 0.19.3, amended the plugin to display the play / pause buttons again.
